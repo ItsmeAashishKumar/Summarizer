@@ -59,6 +59,15 @@ input:focus{
     white-space: pre-wrap; /* Ensure that line breaks are respected */
     word-wrap: break-word; 
 }
+.error-message {
+    color: red;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 4px;
+    background-color: #fdd;
+    margin-bottom: 1rem;
+}
+
 
 .searchIcon:hover{
     cursor: pointer;
