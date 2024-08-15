@@ -1,0 +1,248 @@
+.about-ele{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+.about{
+    height: 150vh; 
+}
+.span{
+    margin-top: 5px;
+    font-size: 72px;
+    font-size: 4rem;
+    background: -webkit-linear-gradient(#e5d209de, #ff9500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about-para{
+    max-width: 600px;
+}
+
+.input-bar{
+    border:1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    display: flex;
+    width: 500px;
+    height: 40px;
+    justify-content: space-around;
+    align-items: center;
+}
+input{
+    width: 85%;
+    padding: 5px;
+    border: none;
+    height: 100%;
+  
+}
+input:focus{
+    outline: none;
+}
+
+.summary{
+    width: 700px;  /* Set the desired width */
+    height: 300px;  /* Set the desired height */
+    overflow-y: auto;  /* Make the div scrollable if content exceeds height */
+    padding: 10px;
+    border: 1px solid #ccc;  /* Optional: Add a border */
+    border-radius: 4px;  /* Optional: Add border radius */
+    background-color: #f9f9f9; 
+    border: 1px solid black;
+}
+.answer{
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 3rem;
+    white-space: pre-wrap; /* Ensure that line breaks are respected */
+    word-wrap: break-word; 
+}
+
+.searchIcon:hover{
+    cursor: pointer;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    
+}
+
+
+.language{
+    background-color: #ff9500;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+.length{
+    background-color: #ff9500;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+
+:root {
+    --arrow-bg: rgba(255, 255, 255, 0.3);
+    --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
+    --option-bg: rgba(200, 200, 200, 0.8); /* Adjusted color for visibility */
+    --select-bg: rgba(255, 255, 255, 0.2);
+}
+
+/* <select> styles */
+select {
+    /* Reset */
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    /* Personalize */
+    width: 20rem;
+    padding: 1rem 4rem 1rem 1rem;
+    background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
+      linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
+    color: white;
+    border-radius: 0.25em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    /* Remove IE arrow */
+    &::-ms-expand {
+      display: none;
+    }
+    /* Remove focus outline */
+    &:focus {
+      outline: none;
+      background-color: var(--select-bg);
+      box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.4); /* Emphasize when focused */
+    }
+}
+
+select option {
+    color: black;
+    background-color: var(--option-bg);
+}
+
+/* Add a hover effect on the select box itself */
+select:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* For option hover effect (not natively supported in most browsers) */
+select option:hover {
+    background-color: var(--option-bg); /* This might not work as expected */
+}
+
+
+
+@media (max-width:575.08px) {
+    .main-heading{
+      font-size: 1.5rem;
+    }
+    .span{
+        font-size: 3rem;
+    }
+    .para{
+        width: 400px;
+    }
+    .input-bar{
+        width: 400px;
+    }
+    .options{
+        gap: 20px;
+    }
+    .language{
+        width: 150px;
+    }
+    select{
+        width: 150px;
+    }
+    .length{
+        width: 150px;
+    }
+    .summary{
+        width: 500px;
+    }
+  }
+
+@media (max-width:401px) {
+    .main-heading{
+        font-size: 1rem;
+    }
+    .span{
+        font-size: 1.5rem;
+    }
+
+    .para{
+        margin-top: -10px;
+        font-size: .8rem;
+        width: 260px;
+    }
+    .input-bar{
+        width: 290px;
+        padding: 5px;
+    }
+    .options{
+        gap: 10px;
+    }
+    .language{
+        width: 120px;
+        font-size: .6rem;
+    }
+    select{
+        width: 120px;
+    }
+    .length{
+        font-size: .6rem;
+        width: 120px;
+    }
+}
+
+
+@media (max-width:700px){
+    .summary{
+        width: 600px;
+    }
+}
+@media (max-width:600px){
+    .summary{
+        width: 550px;
+    }
+    .para{
+        font-size: .9rem;
+    }
+}
+@media (max-width:550px){
+    .summary{
+        width: 500px;
+    }
+}
+@media (max-width:450px){
+    .summary{
+        width: 400px;
+    }
+}
+@media (max-width:401px){
+    .summary{
+        width: 370px;
+    }
+}
+@media (max-width:374px){
+    .summary{
+        width: 340px;
+    }
+}
+@media (max-width:342px){
+    .summary{
+        width: 320px;
+    }
+}
